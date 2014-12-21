@@ -78,6 +78,14 @@
                                     <rect key="frame" x="16" y="309" width="300" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxy-TG-k7s">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="352" width="300" height="30"/>
+                                </variation>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYp-kP-XIt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.6224891507440099" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -98,35 +106,38 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="87" width="295" height="81"/>
+                                    <rect key="frame" x="16" y="112" width="295" height="56"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxy-TG-k7s">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgo-qD-Dwg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="352" width="300" height="30"/>
+                                    <rect key="frame" x="16" y="72" width="295" height="32"/>
                                 </variation>
-                            </textField>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="MW2-nU-FwA"/>
                                 <exclude reference="eaW-t9-Ua6"/>
+                                <exclude reference="Pxy-TG-k7s"/>
                                 <exclude reference="RYp-kP-XIt"/>
                                 <exclude reference="IXQ-xE-rex"/>
-                                <exclude reference="Pxy-TG-k7s"/>
+                                <exclude reference="Lgo-qD-Dwg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="MW2-nU-FwA"/>
                                 <include reference="eaW-t9-Ua6"/>
+                                <include reference="Pxy-TG-k7s"/>
                                 <include reference="RYp-kP-XIt"/>
                                 <include reference="IXQ-xE-rex"/>
-                                <include reference="Pxy-TG-k7s"/>
+                                <include reference="Lgo-qD-Dwg"/>
                             </mask>
                         </variation>
                     </view>
@@ -135,6 +146,7 @@
                         <outlet property="enterNameTextField" destination="eaW-t9-Ua6" id="mwz-v0-vbl"/>
                         <outlet property="mailButton" destination="RYp-kP-XIt" id="orc-Ki-I96"/>
                         <outlet property="messageLabel" destination="IXQ-xE-rex" id="71y-AP-MZD"/>
+                        <outlet property="nameLabel" destination="Lgo-qD-Dwg" id="pUr-qN-a4V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
